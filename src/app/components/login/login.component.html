@@ -1,0 +1,37 @@
+<form (ngSubmit)="submitForm()" [formGroup]="formData" autocomplete="off">
+   <div style="display: flex; justify-content: center">
+     
+ 
+       <!-- Username -->
+       <div>
+         
+           <label>Username</label>
+           <input
+             matInput
+             placeholder="Ex. profanis"
+             formControlName="username"
+           />
+         
+       </div>
+       <!-- /Username -->
+ 
+       <!-- Password -->
+       <div>
+        
+           <label>Password</label>
+           <input
+             matInput
+             type="password"
+             placeholder="Ex. s3c3tP@ss"
+             formControlName="password"
+           />
+       
+       </div>
+       <!-- /Password -->
+ 
+       <div>
+         <button type="submit" mat-raised-button color="primary">Login</button>
+       </div>
+     
+   </div>
+ </form>
